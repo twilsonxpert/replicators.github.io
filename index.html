@@ -1,0 +1,30 @@
+<html lang="en">
+  <head>
+    <script type="text/javascript" src="replicators.js"></script>
+  </head>
+  <title>The Replicators</title>
+  <body>
+    <h3>
+      You are a single replicator stranded on earth. Find a way off the planet.
+    </h3>
+    <div>
+      <button id="gatheriron" onclick="gather('iron');">Gather Iron</button>
+      <button id="buildWorker" onclick="buildWorker()" style="display: none">
+        Build Worker
+      </button>
+      <button
+        id="automateWorkers"
+        onclick="buyAutomate('workers')"
+        style="display: none"
+      >
+        Initiate Self-Replication
+      </button>
+    </div>
+    <div id="resources">
+      <span id="iron">Iron: 0</span>
+    </div>
+    <div id="workers">
+      <span id="workernum">Workers: 0</span>
+    </div>
+  </body>
+</html>
